@@ -41,3 +41,21 @@
 |Data zakupu produktu|span.user-post__published > time:nth-child(2)["datetime"]|purchase_date||
 +---------------+------------+--------------+----------+
 
+Pobranie poszczególnych składowych pojedynczych opinii do indywidualnych zmiennych 
+Zdefiniowanie funkcji do pobierania elementów struktury HTML z uwzględnieniem obsługi błędów
+
+## Etap 2 - Pobranie wszystkich  opinii o produkcie 
+* Zdefiniowanie słownika do przechowywania składwych pojedynczej opinii
+* Zdefiniowanie listy do przechowywania wszystkich opinii o produkcie
+* Dodanie pętli przechodzącej po wszystkich opiniach z pojedynczej strony
+* Dodanie pętli przechodzącej po wszystkich stronach z opiniami o produkcie
+* Eksport opinii o produkcie do pliku .json
+
+## Etap 3 - Refaktoryzacja kodu
+* Parametryzacja kodu produktu, o którym pobierane sa opinie
+* Użucie słownika składowych opinii oraz wyrażenia słownikowego (dictionary comprehension) do utworzenia słownika z składowymi pojedynczej opinii
+
+## Etap 4 - Analiza opinii pobranych dla pojedynczego produktu
+* Wyliczenie podstawowych statystyk o opiniach
+* Rysowanie histogramu częstości poszczególnych ocen (gwiazdek)
+* Rysowanie udziału rekomendacji w zbiorze opinii
